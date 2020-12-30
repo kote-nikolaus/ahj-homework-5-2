@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CRM System</title>
+</head>
+<body>
+  <h1>Товары в наличии</h1>
+    <button class='add-button' id='add-button'>Добавить товар</button>
+    <section id="articles-box">
+    </section>
+    <form id='modal' class='modal' novalidate>
+      <label class='input-name-label'>
+        Название товара
+        <input id='name' type='text' required>
+      </label>
+      <label class='input-price-label'>
+        Стоимость
+        <input id='price' type='number' min='1' required>
+      </label>
+      <div class='modal-buttons-group'>
+        <button type='submit' class='modal-button' id='save-button'>Сохранить</button>
+        <button class='modal-button' id='cancel-button'>Отмена</button>
+      </div>
+    </form>
+</body>
+</html>
